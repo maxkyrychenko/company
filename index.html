@@ -13,42 +13,27 @@
 	<link rel="preload" as="font" href="fonts/Montserrat-Regular.woff2" type="font/woff2" crossorigin>
 	<style>
 		@media (max-width: 768px) {
-			.body.webp .header {
-				background-image: url('images/mobile-bg.webp') !important;
-			}	
-			.body.no-webp .header {
+			.header {
 				background-image: url('images/mobile-bg.png') !important;
-			}	
-			.body.no-webp .about {
+			}
+			.about {
 				background-image: url('images/about-mobile-bg.png') !important;
 			}
-			.body.webp .about {
-				background-image: url('images/about-mobile-bg.webp') !important;
-			}
-			.body.no-webp .rent {
+			.rent {
 				background-image: url('images/rent-mobile-bg.png') !important;
 			}
-			.body.webp .rent {
-				background-image: url('images/rent-mobile-bg.webp') !important;
-			}
-			.body.no-webp .route {
+			.route {
 				background-image: url('images/route-mobile-bg.png') !important;
 			}
-			.body.webp .route {
-				background-image: url('images/route-mobile-bg.webp') !important;
-			}
-			.body.no-webp .comments {
+			.comments {
 				background-image: url('images/comments-mobile-bg.png') !important;
-			}
-			.body.webp .comments {
-				background-image: url('images/comments-mobile-bg.webp') !important;
 			}
 		}
 	</style>
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header" id="main" style="background-image: url('images/main-bg.webp');" data-bg="images/main-bg.png" data-bg-webp="images/main-bg.webp">
+		<header class="header" id="main">
 	<div class="container">
 		<div class="header__top">
 			<div class="header__top-inner">
@@ -118,7 +103,7 @@
 </header>
 
 		<main class="main">
-			<section class="about page__section" id="about" style="background-image: url('images/about-bg.webp');" data-bg="images/about-bg.png" data-bg-webp="images/about-bg.webp">
+			<section class="about page__section" id="about">
 				<div class="container">
 					<h3 class="about__title title">
 						О КОМПАНИИ
@@ -219,7 +204,7 @@
 				</div>
 			</section>
 
-			<section class="rent page__section" id="rent" style="background-image: url('images/rent-bg.webp');" data-bg="images/rent-bg.png" data-bg-webp="images/rent-bg.webp">
+			<section class="rent page__section" id="rent">
 				<div class="container">
 					<h3 class="rent__title title">
 						УСЛОВИЯ АРЕНДЫ
@@ -367,7 +352,7 @@
 				</div>
 			</section>
 			
-			<section class="route page__section" style="background-image: url('images/route-bg.webp');" data-bg="images/route-bg.png" data-bg-webp="images/route-bg.webp">
+			<section class="route page__section">
 				<div class="container">
 					<h3 class="route__title title">
 						МАРШРУТ
@@ -439,7 +424,7 @@
 				</div>
 			</section>
 
-			<section class="comments page__section" id="comments" style="background-image: url('images/comments-bg.webp');" data-bg="images/comments-bg.png" data-bg-webp="images/comments-bg.webp">
+			<section class="comments page__section" id="comments">
 				<div class="container">
 					<h3 class="comments__title title">
 						ОТЗЫВЫ
