@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>camp.travel</title>
+	<link rel="preload stylesheet" as="style" href="css/style.min.css">
+	<link rel="preload" as="font" href="fonts/IBMPlexSerif-Bold.woff" type="font/woff" crossorigin>
+	<link rel="preload" as="font" href="fonts/IBMPlexSerif-Bold.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="fonts/Montserrat-Bold.woff" type="font/woff" crossorigin>
+	<link rel="preload" as="font" href="fonts/Montserrat-Bold.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="fonts/Montserrat-Regular.woff" type="font/woff" crossorigin>
+	<link rel="preload" as="font" href="fonts/Montserrat-Regular.woff2" type="font/woff2" crossorigin>
+	<style>
+		@media (max-width: 768px) {
+			.header {
+				background-image: url('images/mobile-bg.png') !important;
+			}
+			.about {
+				background-image: url('images/about-mobile-bg.png') !important;
+			}
+			.rent {
+				background-image: url('images/rent-mobile-bg.png') !important;
+			}
+			.route {
+				background-image: url('images/route-mobile-bg.png') !important;
+			}
+			.comments {
+				background-image: url('images/comments-mobile-bg.png') !important;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header" id="main">
+	<div class="container">
+		<div class="header__top">
+			<div class="header__top-inner">
+				<a class="logo" href="#">
+					<img class="logo__img" src="images/logo.svg" alt="logo">
+				</a>
+
+				<button class="header__burger"></button>
+
+				<nav class="mobile-menu">
+					<button class="mobile-menu__close-btn"></button>
+
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link anchor" href="#about">О компании</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link anchor" href="#rent">Условия аренды <br> и стоимость</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link anchor" href="#comments">Отзывы</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link anchor" href="#contacts">Контакты</a>
+						</li>
+					</ul>
+					
+					<a class="logo anchor" href="#main">
+						<img class="logo__img" src="images/logo.svg" alt="logo">
+					</a>
+				</nav>
+
+				<nav class="menu header__menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link anchor" href="#about">О компании</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link anchor" href="#rent">Условия аренды и стоимость</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link anchor" href="#comments">Отзывы</a>
+						</li>
+					</ul>
+				</nav>
+
+				<a class="contacts-link header__contacts-link anchor" href="#contacts">
+					Контакты
+				</a>
+
+			</div>
+		</div>
+
+		<section class="intro">
+			<h1 class="intro__title">
+				АРЕНДА АВТОДОМА
+			</h1>
+			<h4 class="intro__subtitle">
+				В ЕВРОПЕ
+			</h4>
+
+			<p class="intro__text">
+				Путешествие по всей Европе без переплат и остановок в отелях и гостиницах
+			</p>
+		</section>
+	</div>
+</header>
+
+		<main class="main">
+			<section class="about page__section" id="about">
+				<div class="container">
+					<h3 class="about__title title">
+						О КОМПАНИИ
+					</h3>
+
+					<div class="about__block">
+						<p class="about__block-text about__block-text--1">
+							Мы — это молодая компания, готовая предложить вам аренду автодома в Европе.
+						</p>
+
+						<p class="about__block-text about__block-text--2">
+							В трейлере на колёсах есть абсолютно все условия для комфортного прживания, как в пути, так и во время длительных стоянок.
+							Европейские города давно оборудованы специализированными стоянками для кемперов.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="specs page__section">
+				<div class="specs__container container">
+					<h3 class="specs__title title">
+						ХАР-КИ АВТОДОМА
+					</h3>
+
+					<div class="specs__inner">
+						<div class="specs__item">
+							<p class="specs__item-title">
+								Длина
+							</p>
+							<p class="specs__item-value">
+								7.5 м
+							</p>
+						</div>
+
+						<div class="specs__item">
+							<p class="specs__item-title">
+								Высота
+							</p>
+							<p class="specs__item-value">
+								3 м
+							</p>
+						</div>
+
+						<div class="specs__item">
+							<p class="specs__item-title">
+								Год
+							</p>
+							<p class="specs__item-value">
+								2018
+							</p>
+						</div>
+
+						<div class="specs__item">
+							<p class="specs__item-title">
+								Мотор
+							</p>
+							<p class="specs__item-value">
+								2.3 / 150 л.с.
+							</p>
+						</div>
+
+						<div class="specs__item">
+							<p class="specs__item-title">
+								Вес
+							</p>
+							<p class="specs__item-value">
+								2.900 кг
+							</p>
+						</div>
+
+						<div class="specs__item">
+							<p class="specs__item-title">
+								Ширина
+							</p>
+							<p class="specs__item-value">
+								2.25 м
+							</p>
+						</div>
+
+						<div class="specs__item">
+							<p class="specs__item-title">
+								Коробка
+							</p>
+							<p class="specs__item-value">
+								автомат
+							</p>
+						</div>
+
+						<div class="specs__item">
+							<p class="specs__item-title">
+								Кол-во мест
+							</p>
+							<p class="specs__item-value">
+								4
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="rent page__section" id="rent">
+				<div class="container">
+					<h3 class="rent__title title">
+						УСЛОВИЯ АРЕНДЫ
+					</h3>
+
+					<div class="rent__inner">
+						<div class="rent__item">
+							<h6 class="rent__item-title">
+								ПОДГОТОВКА К АРЕНДЕ
+							</h6>
+							<ul class="rent__item-list">
+								<li class="rent__item-li">
+									— Полная уборка кемпера
+								</li>
+								<li class="rent__item-li">
+									— Очистка туалета
+								</li>
+								<li class="rent__item-li">
+									— Заполнение автодома водой и газом
+								</li>
+								<li class="rent__item-li">
+									— Техническая проверка автодома
+								</li>
+							</ul>
+						</div>
+
+						<div class="rent__item">
+							<h6 class="rent__item-title">
+								КОНСУЛЬТАЦИЯ
+							</h6>
+							<ul class="rent__item-list">
+								<li class="rent__item-li">
+									— Как правильно эксплуатировать дом на колёсах
+								</li>
+								<li class="rent__item-li">
+									— Помощь в планировании своего марщрута
+								</li>
+							</ul>
+						</div>
+
+						<div class="rent__item">
+							<h6 class="rent__item-title">
+								страховка
+							</h6>
+							<ul class="rent__item-list">
+								<li class="rent__item-li">
+									— ОСАГО
+								</li>
+								<li class="rent__item-li">
+									— КАСКО
+								</li>
+							</ul>
+						</div>
+
+						<div class="rent__item">
+							<h6 class="rent__item-title">
+								ГОТОВЫЙ К ПУТЕШЕСТВИЮ <br>
+								АВТОДОМ
+							</h6>
+							<ul class="rent__item-list">
+								<li class="rent__item-li">
+									— 2 двуспальные кровати
+								</li>
+								<li class="rent__item-li">
+									— Раздельный санузел
+								</li>
+								<li class="rent__item-li">
+									— Мини-кухня
+								</li>
+								<li class="rent__item-li">
+									— Телевизор
+								</li>
+								<li class="rent__item-li">
+									— Кондиционер
+								</li>
+								<li class="rent__item-li">
+									— Навигационная система
+								</li>
+								<li class="rent__item-li">
+									— Два удобных кресла и стол
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="rent-reqs">
+						<h3 class="rent-reqs__title title">
+							ТРЕБОВАНИЯ
+						</h3>
+		
+						<div class="rent-reqs__inner">
+							<ul class="rent-reqs__list">
+								<li class="rent-reqs__item">
+									— Вод. права категории B
+								</li>
+								<li class="rent-reqs__item">
+									— Водительский стаж 3 года
+								</li>
+								<li class="rent-reqs__item">
+									— Возраст водителя 25 лет
+								</li>
+							</ul>
+		
+							<div class="rent-reqs__btnwrapper">
+								<button class="rent-reqs__btn btn pop-up__btn">
+									ОФОРМИТЬ АРЕНДУ
+								</button>
+								<div class="pop-up lock-padding">
+									<div class="pop-up__block">
+										<button class="pop-up__close-btn">
+											<img class="pop-up__close" src="images/popup-cross.svg" alt="">
+										</button>
+										<p class="pop-up__text">
+											Оставьте контактные
+											данные в форме. Мы свяжемся с вами,
+											ответим на все вопросы и подберем
+											идеальный автодом для вас.
+										</p>
+										<form class="pop-up__form">
+											<div class="pop-up__form-item form-item">
+												<input class="pop-up__form-input form-input" id="popup-tel" type="tel" required>
+												<label class="pop-up__form-label form-label" for="popup-tel">Телефон</label>
+											</div>
+				
+											<div class="pop-up__form-item form-item">
+												<input class="pop-up__form-input form-input" id="popup-name" type="text" required>
+												<label class="pop-up__form-label form-label" for="popup-name">Имя</label>
+											</div>
+
+											<div class="pop-up__form-item pop-up__form-itemdate form-item">
+												<input class="pop-up__form-input pop-up__form-inputdate form-input" id="popup-date" type="text" autocomplete="off" required>
+												<label class="pop-up__form-label form-label" for="popup-date">Дата начала аренды</label>
+											</div>
+				
+											<button class="pop-up__form-btn btn" type="submit">
+												ОТПРАВИТЬ
+											</button>
+										</form>
+									</div>
+									<div class="pop-up__mask"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="route page__section">
+				<div class="container">
+					<h3 class="route__title title">
+						МАРШРУТ
+					</h3>
+
+					<p class="route__text">
+						Самостоятельно или с помощью диспетчера,
+						вы сможете сами выбрать
+						удобный и интересный маршрут для путешествия, а о вашем комфорте мы
+						позаботимся, предложив дом на колёсах
+						со всеми удобствами
+					</p>
+				</div>
+			</section>
+
+			<section class="price page__section">
+				<div class="container">
+					<h3 class="price__title title">
+						СТОИМОСТЬ
+					</h3>
+
+					<div class="price__inner">
+						<div class="price__item">
+							<h6 class="price__item-name">
+								Сезон а
+							</h6>
+
+							<p class="price__item-date">
+								с 01.06 по 01.09
+							</p>
+
+							<p class="price__item-price">
+								120 €
+							</p>
+						</div>
+
+						<div class="price__item">
+							<h6 class="price__item-name">
+								Сезон В
+							</h6>
+
+							<p class="price__item-date">
+								с 01.09 по 01.11 и с 01.04 по 01.06
+							</p>
+
+							<p class="price__item-price">
+								110 €
+							</p>
+						</div>
+
+						<div class="price__item">
+							<h6 class="price__item-name">
+								Сезон С
+							</h6>
+
+							<p class="price__item-date">
+								c 01.11 по 01.04
+							</p>
+
+							<p class="price__item-price">
+								100 €
+							</p>
+						</div>
+					</div>
+
+					<button class="price__btn btn pop-up__btn">
+						ОФОРМИТЬ АРЕНДУ
+					</button>
+				</div>
+			</section>
+
+			<section class="comments page__section" id="comments">
+				<div class="container">
+					<h3 class="comments__title title">
+						ОТЗЫВЫ
+					</h3>
+
+					<div class="comments__inner">
+						<div class="comments__slider comments-slider swiper-container">
+							<div class="comments-slider__wrapper swiper-wrapper">
+								<div class="comments-slider__slide swiper-slide">
+									<div class="comments-item">
+										<h6 class="comments-item__title">
+											Сезон А 
+										</h6>
+	
+										<p class="comments-item__date">
+											25.07.2020 - 10.08.2020
+										</p>
+	
+										<p class="comments-item__text">
+											Компактность дорогого стоит. Этот автодом легко помещается на легковой парковке. Компактность, в сочетании с революционным французским интерьером и максимальным набором опций, для перечисления, которых понадобился бы целый лист, дают очень много выгодных моментов для путешественников. мальным набором опций, для перечисления, которых понадобился бы целый лист, дают очень много выгодных моментов для путешественников.
+										</p>
+	
+										<p class="comments-item__name">
+											Элионора
+										</p>
+									</div>
+								</div>
+	
+								<div class="comments-slider__slide swiper-slide">
+									<div class="comments-item">
+										<h6 class="comments-item__title">
+											Сезон В
+										</h6>
+	
+										<p class="comments-item__date">
+											05.09.2020 - 28.09.2020
+										</p>
+	
+										<p class="comments-item__text">
+											Если вы ищете, где арендовать автодом по оптимальной, то camp.travel — отличный вариант. Автодом предоставили идеально чистым, и помех со стороны техники в течение всего путешествия не возникло. Места оказалось достаточно, все с умом расставлено, ничего не мешает. Порадовало наличие минимального набора посуды, не пришлось питаться из одноразовой. В общем, я доволен. Спасибо!
+										</p>
+	
+										<p class="comments-item__name">
+											Дмитрий
+										</p>
+									</div>
+								</div>
+	
+								<div class="comments-slider__slide swiper-slide">
+									<div class="comments-item">
+										<h6 class="comments-item__title">
+											Сезон С
+										</h6>
+	
+										<p class="comments-item__date">
+											05.02.2020 - 01.04.2020
+										</p>
+	
+										<p class="comments-item__text">
+											Арендовали автодом на целых 2 месяца. Впечатления только положительные! Задумались о покупке своего автодома, настолько нам понравился такой вид путешествия.
+										</p>
+	
+										<p class="comments-item__name">
+											Светлана
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comments-slider__buttons">
+							<div class="comments-slider__button-prev"></div>
+							<div class="comments-slider__button-next"></div>
+						</div>
+					</div>
+					</div>
+			</section>
+
+			<section class="contacts page__section" id="contacts">
+				<div class="container">
+					<h3 class="contacts__title title">
+						КОНТАКТЫ
+					</h3>
+
+					<div class="contacts__inner">
+						<div class="contacts__block">
+							<div class="contacts__block-info">
+								<div class="contacts__block-tel">
+									<a href="tel:+11234567890">
+										+1 123 456 78 90
+									</a>
+								</div>
+	
+								<div class="contacts__block-email">
+									<a href="mailto:camp.travel@.com">
+										camp.travel@.com
+									</a>
+								</div>
+							</div>
+
+							<p class="contacts__block-text">
+								Остались вопросы? Оставьте контактные
+								данные в форме. Мы свяжемся с вами,
+								ответим на все вопросы и подберем
+								идеальный автодом для вас.
+							</p>
+						</div>
+
+						<form class="contacts__form">
+
+							<div class="contacts__form-item form-item">
+								<input class="contacts__form-input form-input" id="tel" type="tel" required>
+								<label class="contacts__form-label form-label" for="tel">Телефон</label>
+							</div>
+
+							<div class="contacts__form-item form-item">
+								<input class="contacts__form-input form-input" id="name" type="text" required>
+								<label class="contacts__form-label form-label" for="name">Имя</label>
+							</div>
+
+							<div class="contacts__form-item form-item">
+								<textarea class="contacts__form-textarea contacts__form-input form-input" id="question" required></textarea>
+								<label class="contacts__form-label form-label" for="question">Вопрос</label>
+							</div>
+
+							<div class="contacts__form-btn">
+								<button class="btn" type="submit">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+			<a class="logo footer__logo anchor" href="#main">
+				<img class="logo__img" src="images/footer-logo.svg" alt="logo">
+			</a>
+
+			<nav class="menu footer__menu">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a class="menu__link anchor" href="#about">О компании</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link anchor" href="#rent">Условия аренды и стоимость</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link anchor" href="#comments">Отзывы</a>
+					</li>
+				</ul>
+			</nav>
+
+			<a class="contacts-link anchor" href="#contacts">
+				Контакты
+			</a>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script src="js/main.min.js"></script>
+</body>
+</html>

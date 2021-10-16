@@ -1,0 +1,611 @@
+@import 'utils/libs';
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+
+/* Wrapper */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+/* Container */
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+/* Global Styles */
+
+//Body
+body {
+	position: relative;
+	@include Montserrat-regular;
+	color: #000000;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+// Textarea
+textarea {
+	resize: none;
+}
+
+// Section
+
+.page__section {
+	padding: 65px 0 150px;
+}
+
+//Title
+.title {
+	@include IBMPlexSerif-bold;
+	font-size: 40px;
+	line-height: 1.3;
+	text-transform: uppercase;
+	margin-bottom: 120px;
+}
+
+// Google Autocomplete
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 50px white inset !important;
+}
+
+// Firefox Red Border 
+input:required {
+	box-shadow: none;
+}
+
+//Button
+.btn {
+	display: inline-block;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	background-color: #ff3232;
+	text-transform: uppercase;
+	@include IBMPlexSerif-bold;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+// Page Section BG Text
+
+.page__section::before {
+	position: absolute;
+	left: 19%;
+	top: -15px;
+	@include IBMPlexSerif-bold;
+	color: #fafafa;
+	font-size: 144px;
+	white-space: nowrap;
+	z-index: -1;
+}
+
+// Body Scroll Lock
+
+.body--lock {
+	overflow: hidden;
+}
+
+// Global Form Styles
+
+.form-item {
+	position: relative;
+}
+
+.form-input {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	height: 60px;
+	border: 1px solid #bebebe;
+	padding: 0 20px;
+
+	&:focus {
+		border-color: darken(#bebebe, 20%);
+	}
+}
+
+
+.form-label {
+	position: absolute;
+	left: 20px;
+	top: 0;
+	line-height: 61px;
+	font-size: 16px;
+	color: #a2a2a2;
+	transition: all 0.3s ease-out;
+	pointer-events: none;
+}
+
+.pop-up__form-inputdate.pop-up__form-inputdate--active + .form-label{
+	top: -10px;
+	left: 10px;
+	font-size: 14px;
+	color: black;
+	padding: 0 5px;
+	background-color: #fff;
+	line-height: 20px;
+}
+
+.form-input:focus + .form-label,
+.form-input:valid + .form-label {
+	top: -10px;
+	left: 10px;
+	font-size: 14px;
+	color: black;
+	padding: 0 5px;
+	background-color: #fff;
+	line-height: 20px;
+}
+
+//
+//
+
+/* Styles */
+
+/* Header */
+.header {
+	background-image: url('../images/main-bg.png');
+	height: 100vh;
+	background-position: center bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	&__top-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 80px;
+	}
+
+	&__burger {
+		display: none;
+	}
+}
+
+.contacts-link {
+	font-size: 16px;
+	color: #000000;
+}
+
+.menu {
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		font-size: 16px;
+	}
+
+	&__item + &__item {
+		margin-left: 50px;
+	}
+
+	&__link {
+		color: #000000;
+	}
+}
+
+.mobile-menu {
+	display: none;
+}
+
+/* Intro */
+
+.intro {
+	padding: 250px 0 280px;
+	&__title {
+		@include IBMPlexSerif-bold;
+		font-size: 64px;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		margin-bottom: 50px;
+		@include IBMPlexSerif-bold;
+		font-size: 36px;
+		color: #ff3232;
+	}
+
+	&__text {
+		max-width: 415px;
+	}
+}
+
+/* Main Content */
+.main {
+	flex: 1 1 auto;
+}
+
+/* About */
+.about {
+	background-image: url('../images/about-bg.png');
+	position: relative;
+	min-height: 730px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	&::before {
+		content: 'О КОМПАНИИ';
+	}
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+
+		&-text {
+			&--1 {
+				max-width: 450px;
+			}
+			&--2 {
+				max-width: 510px;
+			}
+		}
+	}
+}
+
+/* Specifications */
+
+.specs {
+	position: relative;
+
+	&::before {
+		content: 'ХАР-ки АВТОДОМА';
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 35px;
+	}
+
+	&__item {
+		width: 25%;
+	}
+
+	&__item-title {
+		margin-bottom: 5px;
+	}
+
+	&__item-value {
+		@include Montserrat-bold;
+		font-size: 28px;
+	}
+}
+
+/* Rent */
+.rent {
+	background-image: url('../images/rent-bg.png');
+	position: relative;
+	background-position: center 75%;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	&::before {
+		content: 'УСЛОВИЯ АРЕНДЫ';
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 50px;
+		padding-bottom: 370px;
+	}
+
+	&__item {
+		display: flex;
+		&-title {
+			width: 50%;
+			font-size: 22px;
+			@include Montserrat-bold;
+			text-transform: uppercase;
+		}
+
+		&-list {
+			width: 50%;
+		}
+	}
+}
+
+.rent-reqs {
+	&__title {
+		color: #ff3f3f;
+		margin-bottom: 70px;
+	}
+
+	&__inner {
+		display: flex;
+	}
+
+	&__list {
+		width: 50%;
+	}
+
+	&__btnwrapper {
+		width: 50%;
+	}
+
+	&__btn {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+}
+
+/* Route */
+.route {
+	background-image: url('../images/route-bg.png');
+	position: relative;
+	min-height: 590px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain;
+
+	&::before {
+		content: 'МАРШРУТ';
+	}
+
+	&__text {
+		max-width: 476px;
+	}
+}
+
+/* Price */
+.price {
+	position: relative;
+
+	&::before {
+		content: 'СТОИМОСТЬ';
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		margin-bottom: 90px;
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item-name {
+		width: 33.333%;
+		@include Montserrat-bold;
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+
+	&__item-date {
+		width: 33.333%;
+	}
+
+	&__item-price {
+		width: 33.333%;
+		@include IBMPlexSerif-bold;
+		font-size: 28px;
+		text-align: right;
+	}
+
+	&__btn {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+}
+
+/* Comments */
+.comments {
+	background-image: url('../images/comments-bg.png');
+	position: relative;
+	min-height: 925px;
+	background-size: contain;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+
+	&::before {
+		content: 'ОТЗЫВЫ';
+	}
+}
+
+/* Comments Slider */
+
+.swiper-container {
+	margin-left: 0;
+}
+
+.comments-slider__button-prev,
+.comments-slider__button-next {
+	position: absolute;
+	top: 40%;
+	cursor: pointer;
+}
+
+.comments-slider__button-prev {
+	left: 150px;
+	width: 24px;
+	height: 24px;
+}
+
+.comments-slider__button-next {
+	right: 150px;
+	content: '';
+	width: 24px;
+	height: 24px;
+}
+
+/* Comments Item (slide) */
+.comments-item {
+	max-width: 685px;
+	&__title {
+		font-size: 28px;
+		@include Montserrat-bold;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+
+	&__date {
+		display: inline-block;
+		margin-bottom: 35px;
+		font-size: 16px;
+		color: #8b8b8b;
+	}
+
+	&__text {
+		margin-bottom: 35px;
+	}
+
+	&__name {
+		color: #323232;
+	}
+}
+
+/* Contacts */
+.contacts {
+	position: relative;
+
+	&::before {
+		content: 'КОНТАКТЫ';
+	}
+
+	&__inner {
+		display: flex;
+	}
+
+	&__block {
+		width: 50%;
+
+		&-info {
+			margin-bottom: 35px;
+		}
+
+		&-tel {
+			font-size: 24px;
+			@include Montserrat-bold;
+			a {
+				color: #000000;
+			}
+		}
+
+		&-email {
+			font-size: 24px;
+			a {
+				color: #000000;
+			}
+		}
+
+		&-text {
+			max-width: 390px;
+		}
+	}
+
+	&__form {
+		width: 50%;
+
+		&-textarea {
+			padding-top: 15px;
+			margin-bottom: 35px;
+			height: 110px;
+		}
+
+		&-btn {
+			text-align: right;
+
+			button {
+				padding: 18px 73px;
+			}
+		}
+	}
+}
+
+/* Footer */
+.footer {
+	background-color: #3d3d3d;
+	padding: 97px 0;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	& .contacts-link {
+		color: #fff;
+	}
+
+	&__menu .menu__link {
+		color: #fff;
+	}
+}
+
+.pop-up {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+
+	&--active {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__mask {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 9000;
+		background-color: rgba(#222222, 0.5);
+	}
+
+	&__block {
+		position: relative;
+		padding: 62px 40px;
+		max-width: 650px;
+		background-color: #fff;
+		z-index: 9999;
+	}
+
+	&__close-btn {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		background-color: transparent;
+	}
+
+	&__text {
+		max-width: 520px;
+		margin-bottom: 35px;
+	}
+
+	&__form-inputdate {
+		height: 100px;
+		margin-bottom: 35px;
+		position: relative;
+		background-position: right 20px top 20px;
+		background-repeat: no-repeat;
+	}
+
+	&__form-btn {
+		width: 100%;
+	}
+}
+
+@import './media';
